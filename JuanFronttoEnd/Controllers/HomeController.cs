@@ -25,6 +25,7 @@ namespace JuanFronttoEnd.Controllers
                 Categories = _context.Categories.Where(c => !c.IsDeleted)
                 .Include(pc => pc.ProductsCategories).ThenInclude(ct => ct.Product).ToList(),
                 Products = _context.Products.Where(p => !p.IsDeleted).Include(p => p.Images).ToList(),
+                Images = _context.ProductImages.ToList(),
                 Blogs=_context.Blogs.ToList(),
                 Brands = _context.Brands.ToList()
             };

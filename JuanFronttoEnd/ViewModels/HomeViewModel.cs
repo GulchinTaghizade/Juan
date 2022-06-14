@@ -14,6 +14,7 @@ namespace JuanFronttoEnd.ViewModels
         public List<Categories> Categories { get; set; }
         public List<Blogs> Blogs { get; set; }
         public List<Brands> Brands { get; set; }
+        public List<ProductImages> Images { get; set; }
 
     }
 }
